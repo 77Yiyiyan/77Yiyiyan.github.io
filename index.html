@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .path-note {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎来到我的个人博客</h1>
+    
+    <!-- 绝对路径图片 -->
+    <div class="image-container">
+        <h3>绝对路径方式引用的图片</h3>
+        <!-- ⭐ 实验要求：第一张图片使用绝对路径（需替换为实际图片的网络URL） -->
+        <img src="https://github.com/user-attachments/assets/3d90866a-2c58-41bb-88d1-8f2e2d618d5b" alt="绝对路径示例图片">
+        <div class="path-note">图片引用方式：绝对路径（https://...）</div>
+    </div>
+    
+    <!-- 相对路径图片 -->
+    <div class="image-container">
+        <h3>相对路径方式引用的图片</h3>
+        <!-- ⭐ 实验要求：第二张图片使用相对路径（./images/图片名） -->
+        <img src="./images/book.jpg" alt="相对路径示例图片">
+        <div class="path-note">图片引用方式：相对路径（./images/...）</div>
+    </div>
+    
+    <hr>
+    <p>本文博客发表于2026年5月28日，感谢您的阅读！</p>
+</body>
+</html>
